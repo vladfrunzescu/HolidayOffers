@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="486.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="51.0" layoutY="34.0" prefHeight="246.0" prefWidth="526.0">
+         <columns>
+            <TableColumn fx:id="tableColumnID" prefWidth="75.0" text="Flight Id" />
+            <TableColumn fx:id="tableColumnFrom" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="tableColumnTo" prefWidth="75.0" text="To" />
+            <TableColumn fx:id="tableColumnDeparture" prefWidth="75.0" text="Departure" />
+            <TableColumn fx:id="tableColumnLanding" prefWidth="75.0" text="Landing" />
+            <TableColumn fx:id="tableColumnSeats" prefWidth="75.0" text="Seats" />
+            <TableColumn fx:id="tableColumnAvailable" prefWidth="75.0" text="Available" />
+         </columns>
+      </TableView>
+      <Label layoutX="199.0" layoutY="17.0" text="Nume membru:" />
+      <Label fx:id="labelNume" layoutX="320.0" layoutY="17.0" text="Nume" />
+      <ComboBox fx:id="comboBoxFrom" layoutX="24.0" layoutY="392.0" prefWidth="150.0" promptText="From" />
+      <ComboBox fx:id="comboBoxTo" layoutX="225.0" layoutY="392.0" prefWidth="150.0" promptText="To" />
+      <DatePicker fx:id="datePicker" layoutX="407.0" layoutY="392.0" />
+      <Button layoutX="174.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleCautaButton" text="Cauta" />
+      <Button layoutX="359.0" layoutY="428.0" mnemonicParsing="false" onAction="#handleCumparaButton" text="Cumpara" />
+      <Pagination fx:id="pagination" layoutX="214.0" layoutY="279.0" prefHeight="43.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
